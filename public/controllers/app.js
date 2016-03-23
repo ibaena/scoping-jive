@@ -6,7 +6,11 @@ var Portfolio = angular.module('Portfolio', [
 Portfolio.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
   when('/', {
-    templateUrl: '/views/partials/nav.html',
+    templateUrl: '/views/partials/enter.html',
+    controller: 'mainCtrl'
+  }).
+  when('/ivanbaena',{
+    templateUrl:'/views/partials/home.html',
     controller: 'mainCtrl'
   }).
   otherwise({
