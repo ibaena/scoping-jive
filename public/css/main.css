@@ -13,3 +13,8 @@ a #brand{
 a:hover{
   text-decoration: none;
 }
+
+.breadrumb{
+  position: fixed;
+  bottom:0px;
+}
