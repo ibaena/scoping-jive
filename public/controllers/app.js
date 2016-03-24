@@ -6,31 +6,57 @@ var Portfolio = angular.module('Portfolio', [
 Portfolio.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
   $stateProvider
-  // HOME STATES AND NESTED VIEWS ========================================
     .state('welcome', {
       url: '/',
       templateUrl: '/views/partials/enter.html',
       controller: 'mainCtrl'
     })
-    // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
     .state('home', {
       url: '/ivanbaena',
-      templateUrl: '/views/partials/nav.html',
+      views: {
+        '': {
+          templateUrl: '/views/partials/home.html'
+        },
+        'columnOne': {
+          templateUrl: '/views/partials/nav.html'
+        },
+      },
       controller: 'mainCtrl'
     })
-    .state('about', {
+  .state('about', {
       url: '/about',
-      templateUrl: '/views/partials/about.html',
+      views: {
+        '': {
+          templateUrl: '/views/partials/about.html'
+        },
+        'columnOne': {
+          templateUrl: '/views/partials/nav.html'
+        },
+      },
       controller: 'mainCtrl'
     })
     .state('skills', {
       url: '/skills',
-      templateUrl: '/views/partials/skills.html',
+      views: {
+        '': {
+          templateUrl: '/views/partials/skills.html'
+        },
+        'columnOne': {
+          templateUrl: '/views/partials/nav.html'
+        },
+      },
       controller: 'mainCtrl'
     })
     .state('contact', {
       url: '/contact',
-      templateUrl: '/views/partials/contact.html',
+      views: {
+        '': {
+          templateUrl: '/views/partials/contact.html'
+        },
+        'columnOne': {
+          templateUrl: '/views/partials/nav.html'
+        },
+      },
       controller: 'mainCtrl'
     });
 
