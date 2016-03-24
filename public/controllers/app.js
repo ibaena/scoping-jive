@@ -20,29 +20,8 @@ Portfolio.config(function($stateProvider, $urlRouterProvider) {
         'columnOne': {
           templateUrl: '/views/partials/nav.html'
         },
-      },
-      controller: 'mainCtrl'
-    })
-  .state('about', {
-      url: '/about',
-      views: {
-        '': {
+        'portfolio@home': {
           templateUrl: '/views/partials/about.html'
-        },
-        'columnOne': {
-          templateUrl: '/views/partials/nav.html'
-        },
-      },
-      controller: 'mainCtrl'
-    })
-    .state('skills', {
-      url: '/skills',
-      views: {
-        '': {
-          templateUrl: '/views/partials/skills.html'
-        },
-        'columnOne': {
-          templateUrl: '/views/partials/nav.html'
         },
       },
       controller: 'mainCtrl'

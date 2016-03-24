@@ -1,20 +1,66 @@
-.landing{
+.landing {
   max-width: 100%;
   max-height: 100;
 }
-
-a #brand{
+a #brand {
   padding-top: 280px;
   text-align: center;
   color: black;
   text-decoration: none;
 }
-
-a:hover{
+a:hover {
   text-decoration: none;
 }
-
-.breadrumb{
+.breadrumb {
   position: fixed;
-  bottom:0px;
+  bottom: 0px;
+}
+.jumbotron {
+  text-align: center;
+}
+#frontpic {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+#frontsummary {
+  text-align: center;
+}
+.about {
+  background-color: #000;
+  max-width: 100%;
+  height: 300px;
+}
+.skills {
+  background-color: #444;
+  max-width: 100%;
+  height: 300px;
+}
+.contact {
+  background-color: white;
+  max-width: 100%;
+  height: 300px;
+}
+.navtags {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+}
+.navtags {
+  transition: 1s ease;
+}
+.navtags:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+.inverse{
+  color: black;
+}
+.menu-item{
+  width: 100%;
+  height: 100%;
 }
