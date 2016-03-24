@@ -1,8 +1,18 @@
-<div class="container">
+<div class="container" ng-init="header = false" ng-hide="header">
   <div class="row">
     <div class="col-md-12">
-      <h1 id="frontpic">Responsive Front-end Development<br /> <small>HTML | CSS | JavaScript | NodeJS | AngularJS</small></h1>
+      <h1 id="fronthome">Responsive Front-end Development<br/>
+        <small>HTML | CSS | JavaScript | NodeJS | AngularJS</small>
+      </h1>
     </div>
   </div>
 </div>
-<div ui-view="portfolio"></div>
+
+<a href="" ng-hide="header" ng-click="header = !header" class="bringup">
+  <i class="fa fa-arrow-up fa-3x"></i>
+</a>
+<a href="" ng-show="header" ng-click="header = !header" class="bringup">
+  <i class="fa fa-arrow-down fa-3x"></i>
+</a>
+
+<div ui-view="portfolio"></click here to bring menu to topdiv>

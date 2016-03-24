@@ -15,15 +15,9 @@ a:hover {
   position: fixed;
   bottom: 0px;
 }
-.jumbotron {
-  text-align: center;
-}
-#frontpic {
+#fronthome {
   padding-top: 100px;
-  padding-bottom: 200px;
-  text-align: center;
-}
-#frontsummary {
+  padding-bottom: 175px;
   text-align: center;
 }
 .about {
@@ -63,9 +57,21 @@ a:hover {
   width: 100%;
   height: 100%;
 }
-.animated {
+.reg-popup {
   text-align: center;
   -webkit-animation-duration: .1s;
   opacity: .8;
   background-color: white;
+}
+.popup {
+  text-align: center;
+  -webkit-animation-duration: .1s;
+  opacity: .8;
+  background-color: black;
+  color: white;
+}
+.bringup {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
