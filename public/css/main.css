@@ -17,7 +17,7 @@ a:hover {
   text-align: center;
 }
 #tiles{
-  padding-bottom: 200px;
+  padding-bottom: 900px;
 }
 
 .about {
@@ -79,6 +79,7 @@ a:hover {
   display: inline-block;
   width: 100%;
   text-align: center;
+  color: black;
 }
 .container.ng-hide-add, .container.ng-hide-remove {
   transition: all linear 0.2;
