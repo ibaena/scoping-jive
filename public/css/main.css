@@ -1,6 +1,6 @@
-.landing {
+  .landing {
   max-width: 100%;
-  max-height: 100;
+  max-height: 100%;
 }
 a #brand {
   padding-top: 280px;
@@ -11,35 +11,39 @@ a #brand {
 a:hover {
   text-decoration: none;
 }
-.breadrumb {
-  position: fixed;
-  bottom: 0px;
-}
 #fronthome {
   padding-top: 80px;
   padding-bottom: 215px;
   text-align: center;
 }
+#tiles{
+  padding-bottom: 200px;
+}
+
 .about {
   background-color: #000;
   max-width: 100%;
-  height: 292px;;
+  height: 300px;
+  ;
 }
 .skills {
   background-color: #444;
   max-width: 100%;
-  height: 292px;;
+  height: 300px;
+  ;
 }
 .contact {
   background-color: white;
   max-width: 100%;
-  height: 292px;;
+  height: 300px;
+  ;
 }
 .navtags {
+  font-size: 38px;
   text-decoration: none;
   color: white;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 .navtags {
   transition: 1s ease;
@@ -75,11 +79,18 @@ a:hover {
   width: 100%;
   text-align: center;
 }
+
 /*Contact css*/
-#contact-view{
-  margin-top: 100px;
-#form{
-  background-color: black;
-  height: auto;;
-  max-width: 100%
+
+#map{
+  width: 100%;
+  height: 300px;;
 }
+#contact-view {
+  margin-top: 100px;
+  #form {
+    background-color: black;
+    height: auto;
+    ;
+    max-width: 100%
+  }

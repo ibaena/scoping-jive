@@ -1,10 +1,17 @@
 <div class="container" ng-controller="mainCtrl">
-  <hr />
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <iframe id="map" src="https://www.google.com/maps/embed/v1/place?q=Bayonne,%NJ&zoom=17&key=AIzaSyCqHWFDIibdD6pRFtI0jSW-s2OU1XLa_jU"></iframe>
+    </div>
+  </div>
+  <hr/>
   <div class="row">
     <div class="col-md-3">
-        <a href="" ng-click="backbtn()"><i class="fa fa-arrow-left fa-2x"></i></a>
+      <a href="" ng-click="backbtn()">
+        <i class="fa fa-arrow-left fa-2x"></i>
+      </a>
     </div>
-    <div class="col-md-6"
+    <div class="col-md-6">
       <form>
         <div class="form-group">
           <label for="email">Email address</label>
@@ -22,5 +29,6 @@
       </form>
     </div>
   </div>
-  <hr />
+  <hr/>
 </div>
+<div ui-view="footer"></div>
