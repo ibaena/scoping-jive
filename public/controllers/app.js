@@ -1,31 +1,37 @@
 var Portfolio = angular.module('Portfolio', [
-  'ngRoute',
+  'ui.router',
   'mainCtrl'
 ]);
 
-Portfolio.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.
-  when('/', {
-    templateUrl: '/views/partials/enter.html',
-    controller: 'mainCtrl'
-  }).
-  when('/ivanbaena',{
-    templateUrl:'/views/partials/home.html',
-    controller: 'mainCtrl'
-  }).
-  when('/about',{
-    templateUrl:'/views/partials/about.html',
-    controller: 'mainCtrl'
-  }).
-  when('/skills',{
-    templateUrl:'/views/partials/skills.html',
-    controller: 'mainCtrl'
-  }).
-  when('/contact',{
-    templateUrl:'/views/partials/contact.html',
-    controller: 'mainCtrl'
-  }).
-  otherwise({
-    redirectTo: '/error'
-  });
-}]);
+Portfolio.config(function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/');
+  $stateProvider
+  // HOME STATES AND NESTED VIEWS ========================================
+    .state('welcome', {
+      url: '/',
+      templateUrl: '/views/partials/enter.html',
+      controller: 'mainCtrl'
+    })
+    // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
+    .state('home', {
+      url: '/ivanbaena',
+      templateUrl: '/views/partials/nav.html',
+      controller: 'mainCtrl'
+    })
+    .state('about', {
+      url: '/about',
+      templateUrl: '/views/partials/about.html',
+      controller: 'mainCtrl'
+    })
+    .state('skills', {
+      url: '/skills',
+      templateUrl: '/views/partials/skills.html',
+      controller: 'mainCtrl'
+    })
+    .state('contact', {
+      url: '/contact',
+      templateUrl: '/views/partials/contact.html',
+      controller: 'mainCtrl'
+    });
+
+});
