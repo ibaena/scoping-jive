@@ -71,7 +71,6 @@ a:hover {
 .popup {
   text-align: center;
   -webkit-animation-duration: .1s;
-  opacity: .8;
   background-color: black;
   color: white;
 }
