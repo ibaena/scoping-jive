@@ -34,7 +34,7 @@ Portfolio.config(function($stateProvider, $urlRouterProvider) {
           templateUrl: '/views/partials/contact.html',
           controller: 'mainCtrl'
         },
-        'footer': {
+        'footer@home': {
           templateUrl: '/views/partials/footer.html',
           controller: 'mainCtrl'
         },
