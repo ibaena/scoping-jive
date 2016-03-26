@@ -15,31 +15,24 @@ Portfolio.config(function($stateProvider, $urlRouterProvider) {
       url: '/ivanbaena',
       views: {
         '': {
-          templateUrl: '/views/partials/home.html'
+          templateUrl: '/views/partials/home.html',
+          controller: 'mainCtrl'
         },
         'columnOne': {
-          templateUrl: '/views/partials/nav.html'
+          templateUrl: '/views/partials/nav.html',
+          controller: 'mainCtrl'
         },
         'portfolio@home': {
-          templateUrl: '/views/partials/tiles.html'
+          templateUrl: '/views/partials/tiles.html',
+          controller: 'mainCtrl'
+        },
+        'skills@home': {
+          templateUrl: '/views/partials/skills.html',
+          controller: 'mainCtrl'
         },
         'footer@home': {
-          templateUrl: '/views/partials/footer.html'
-        },
-      },
-      controller: 'mainCtrl'
-    })
-    .state('skills', {
-      url: '/skills',
-      views: {
-        '': {
-          templateUrl: '/views/partials/skills.html'
-        },
-        'columnOne': {
-          templateUrl: '/views/partials/nav.html'
-        },
-        'footer@skills': {
-          templateUrl: '/views/partials/footer.html'
+          templateUrl: '/views/partials/footer.html',
+          controller: 'mainCtrl'
         },
       },
       controller: 'mainCtrl'

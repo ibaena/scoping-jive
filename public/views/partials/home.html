@@ -5,14 +5,21 @@
         <small>HTML | CSS | JavaScript | NodeJS | AngularJS</small>
       </h1>
     </div>
+    <div class="wrap" ng-init="skillsLoader= false" ng-show="skillsLoader">
+      <div ui-view="skills"></div>
+    </div>
+
   </div>
 </div>
 
 <a href="" ng-hide="header" ng-click="header = !header" class="bringup">
-  <i class="fa fa-hand-o-up fa-2x"></i>
+  <i class="fa fa-arrow-circle-up fa-2x"></i>
 </a>
 <a href="" ng-show="header" ng-click="header = !header" class="bringup">
-  <i class="fa fa-hand-o-down fa-2x"></i>
+  <i class="fa fa-arrow-circle-down fa-2x"></i>
 </a>
-  <div ui-view="portfolio"></div>
-  <div ui-view="footer"></div>
+
+
+<div ui-view="portfolio"></div>
+
+<div ui-view="footer"></div>
