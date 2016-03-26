@@ -14,13 +14,13 @@
   </a>
 </div>
 
-<div class="wrapper" ng-init="skillsLoader= false" ng-show="skillsLoader" ng-class="{'slideUp': skillsLoader}">
+<div class="wrapper" ng-init="skillsLoader= false" ng-show="skillsLoader" ng-class="{'slideDown': skillsLoader}">
   <div ui-view="skills"></div>
 </div>
-<div class="wrapper" ng-init="contactLoader= false" ng-show="contactLoader">
+<div class="wrapper" ng-init="contactLoader= false" ng-show="contactLoader" ng-class="{'slideLeft': contactLoader}">
   <div ui-view="contact"></div>
 </div>
-<div class="wrapper" ng-show="header" ng-class="{ 'animated slideUp': header}">
+<div class="wrapper" ng-hide="skillsLoader || !header || contactLoader" ng-show="header" ng-class="{ 'animated slideUp': header}">
   <div ui-view="tiles"></div>
   <div ui-view="footer"></div>
 </div>

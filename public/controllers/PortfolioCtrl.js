@@ -6,7 +6,7 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', function($scope
     $location.path('/ivanbaena');
   };
   $scope.backbtn = function() {
-    $location.path('/ivanbaena');
+    console.log('heyheyhey');
   };
 
 }]);
