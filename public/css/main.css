@@ -83,6 +83,14 @@ a:hover {
 .container.ng-hide-add, .container.ng-hide-remove {
   transition: all linear 0.2;
 }
+
+.wrapper {
+  margin-bottom: 20px;
+}
+
+/*Angular animation*/
+
+
 /*Contact css*/
 
 #map{

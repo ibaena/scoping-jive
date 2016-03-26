@@ -18,11 +18,11 @@ Portfolio.config(function($stateProvider, $urlRouterProvider) {
           templateUrl: '/views/partials/home.html',
           controller: 'mainCtrl'
         },
-        'columnOne': {
+        'header': {
           templateUrl: '/views/partials/nav.html',
           controller: 'mainCtrl'
         },
-        'portfolio@home': {
+        'tiles@home': {
           templateUrl: '/views/partials/tiles.html',
           controller: 'mainCtrl'
         },
@@ -34,7 +34,7 @@ Portfolio.config(function($stateProvider, $urlRouterProvider) {
           templateUrl: '/views/partials/contact.html',
           controller: 'mainCtrl'
         },
-        'footer@home': {
+        'footer': {
           templateUrl: '/views/partials/footer.html',
           controller: 'mainCtrl'
         },

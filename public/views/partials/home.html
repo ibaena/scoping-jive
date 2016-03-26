@@ -1,4 +1,4 @@
-<div class="container" ng-init="header = false" ng-hide="header">
+<div class="container" ng-init="header = false" ng-hide="header" ng-class="{ 'animate zoomOut': header}">
   <div class="row">
     <div class="col-md-12">
       <h1 id="fronthome">Responsive Front-end Development<br/>
@@ -6,22 +6,20 @@
       </h1>
     </div>
   </div>
+  <a href="" ng-hide="header" ng-click="header = !header" class="bringup">
+    <i class="fa fa-arrow-circle-up fa-2x"></i>
+  </a>
+  <a href="" ng-show="header" ng-click="header = !header" class="bringup">
+    <i class="fa fa-arrow-circle-down fa-2x"></i>
+  </a>
 </div>
 
-<div class="wrap" ng-init="skillsLoader= false" ng-show="skillsLoader">
+
+<div class="wrapper" ng-init="skillsLoader= false" ng-show="skillsLoader">
   <div ui-view="skills"></div>
 </div>
-<div class="wrap" ng-init="contactLoader= false" ng-show="contactLoader">
+<div class="wrapper" ng-init="contactLoader= false" ng-show="contactLoader">
   <div ui-view="contact"></div>
 </div>
 
-<a href="" ng-hide="header" ng-click="header = !header" class="bringup">
-  <i class="fa fa-arrow-circle-up fa-2x"></i>
-</a>
-<a href="" ng-show="header" ng-click="header = !header" class="bringup">
-  <i class="fa fa-arrow-circle-down fa-2x"></i>
-</a>
-
-<div ui-view="portfolio"></div>
-
-<div ui-view="footer"></div>
+  <div ui-view="tiles"></div>
