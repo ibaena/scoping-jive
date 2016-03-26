@@ -5,11 +5,14 @@
         <small>HTML | CSS | JavaScript | NodeJS | AngularJS</small>
       </h1>
     </div>
-    <div class="wrap" ng-init="skillsLoader= false" ng-show="skillsLoader">
-      <div ui-view="skills"></div>
-    </div>
-
   </div>
+</div>
+
+<div class="wrap" ng-init="skillsLoader= false" ng-show="skillsLoader">
+  <div ui-view="skills"></div>
+</div>
+<div class="wrap" ng-init="contactLoader= false" ng-show="contactLoader">
+  <div ui-view="contact"></div>
 </div>
 
 <a href="" ng-hide="header" ng-click="header = !header" class="bringup">
@@ -18,7 +21,6 @@
 <a href="" ng-show="header" ng-click="header = !header" class="bringup">
   <i class="fa fa-arrow-circle-down fa-2x"></i>
 </a>
-
 
 <div ui-view="portfolio"></div>
 
