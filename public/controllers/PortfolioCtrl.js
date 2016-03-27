@@ -5,8 +5,10 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', function($scope
     $scope.showNav = true;
     $location.path('/ivanbaena');
   };
-  $scope.backbtn = function() {
-    console.log('heyheyhey');
+  $scope.contactLoader = false;
+  $scope.addRmContact = function() {
+    console.log('hey');
+    $scope.contactLoader = !$scope.contactLoader;
   };
 
 }]);
