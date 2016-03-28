@@ -1,5 +1,3 @@
-<div ng-controller = "mainCtrl">
-
 <div class="container" ng-init="header = false" ng-hide="header" ng-class="{ 'animate slideOutDown': header}">
   <div class="row">
     <div class="col-md-12">
@@ -16,16 +14,16 @@
   </a>
 </div>
 
-
-<div class="wrapper" ng-init="skillsLoader= false" ng-show="skillsLoader" ng-class="{'slideDown': skillsLoader}">
+<div class="wrapper" ng-hide="preloader" >
+  <div ui-view="preloader"></div>
+</div>
+<div class="wrapper" ng-show="skillsLoader" ng-class="{'fadeIn': skillsLoader}">
   <div ui-view="skills"></div>
 </div>
 <div class="wrapper" ng-show="contactLoader" ng-class="{'slideLeft': contactLoader}">
   <div ui-view="contact"></div>
 </div>
-<div class="wrapper" ng-hide="skillsLoader || !header || contactLoader" ng-show="header" ng-class="{ 'animated slideUp': header}">
+<div class="wrapper" ng-hide="skillsLoader || !header || contactLoader || !preloader" ng-show="header" ng-class="{ 'animated slideUp': header}">
   <div ui-view="tiles"></div>
   <div ui-view="footer"></div>
-</div>
-
 </div>

@@ -88,8 +88,11 @@ a:hover {
   margin-bottom: 20px;
 }
 
-/*Angular animation*/
+/*Preloader*/
 
+#preloader{
+  padding-top: 160px;
+}
 
 /*Contact css*/
 

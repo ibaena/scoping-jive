@@ -38,6 +38,10 @@ Portfolio.config(function($stateProvider, $urlRouterProvider) {
           templateUrl: '/views/partials/footer.html',
           controller: 'mainCtrl'
         },
+        'preloader@home': {
+          templateUrl: '/views/partials/preloader.html',
+          controller: 'mainCtrl'
+        }
       },
       controller: 'mainCtrl'
     });
