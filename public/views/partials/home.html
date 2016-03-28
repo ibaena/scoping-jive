@@ -1,4 +1,4 @@
-<div class="container" ng-init="header = false" ng-hide="header" ng-class="{ 'animate slideOutDown': header}">
+<div class="container" ng-init="header = false" ng-hide="header" ng-class="{ 'fadeOut ': header}">
   <div class="row">
     <div class="col-md-12">
       <h1 id="fronthome">Responsive Front-end Development<br/>
@@ -17,13 +17,16 @@
 <div class="wrapper" ng-hide="preloader" >
   <div ui-view="preloader"></div>
 </div>
+<div class="wrapper" ng-show="aboutLoader" ng-class="{'animated fadeIn': aboutLoader , 'animated fadeOut': !aboutLoader}">
+  <div ui-view="about"></div>
+</div>
 <div class="wrapper" ng-show="skillsLoader" ng-class="{'animated fadeIn': skillsLoader , 'animated fadeOut': !skillsLoader}">
   <div ui-view="skills"></div>
 </div>
 <div class="wrapper" ng-show="contactLoader" ng-class="{'animated fadeIn': contactLoader, 'animated fadeOut': !contactLoader}">
   <div ui-view="contact"></div>
 </div>
-<div class="wrapper" ng-hide="skillsLoader || !header || contactLoader || !preloader" ng-show="header" ng-class="{'animated fadeIn': header,'animated fadeOut': header && !preloader}">
+<div class="wrapper" ng-hide="aboutLoader || skillsLoader || !header || contactLoader || !preloader" ng-show="header" ng-class="{'animated fadeIn': header,'animated fadeOut': header && !preloader}">
   <div ui-view="tiles"></div>
   <div ui-view="footer"></div>
 </div>

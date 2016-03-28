@@ -26,6 +26,10 @@ Portfolio.config(function($stateProvider, $urlRouterProvider) {
           templateUrl: '/views/partials/tiles.html',
           controller: 'mainCtrl'
         },
+        'about@home': {
+          templateUrl: '/views/partials/about.html',
+          controller: 'mainCtrl'
+        },
         'skills@home': {
           templateUrl: '/views/partials/skills.html',
           controller: 'mainCtrl'

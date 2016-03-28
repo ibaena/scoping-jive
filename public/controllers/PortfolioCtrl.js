@@ -6,6 +6,22 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
     $location.path('/ivanbaena');
   };
   $scope.preloader = true;
+  $scope.aboutLoader = false;
+  $scope.showAbout = function() {
+    $scope.preloader = false;
+    $timeout(function() {
+      $scope.aboutLoader = !$scope.aboutLoader;
+    }, 3000).then(function() {
+      $scope.preloader = true;
+    });
+  };
+  $scope.removeAbout = function() {
+    $scope.aboutLoader = !$scope.aboutLoader;
+    $scope.preloader = false;
+    $timeout(function() {}, 3000).then(function() {
+      $scope.preloader = true;
+    });
+  };
   $scope.contactLoader = false;
   $scope.showContact = function() {
     $scope.preloader = false;
