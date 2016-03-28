@@ -6,12 +6,7 @@
       </h1>
     </div>
   </div>
-  <a href="" ng-hide="header" ng-click="header = !header" class="bringup">
-    <i class="fa fa-arrow-circle-up fa-2x"></i>
-  </a>
-  <a href="" ng-show="header" ng-click="header = !header" class="bringup">
-    <i class="fa fa-arrow-circle-down fa-2x"></i>
-  </a>
+  <button class="btn btn-default" id="bringup" ng-hide="header" ng-click="header = !header" class="bringup" >Start</button>
 </div>
 
 <div class="wrapper" ng-hide="preloader" ng-class="{'animated fadeIn': !preloader}">

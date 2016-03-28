@@ -17,7 +17,7 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
     $scope.preloader = false;
     $timeout(function() {
       $scope.aboutLoader = !$scope.aboutLoader;
-    }, 100).then(function() {
+    }, 3000).then(function() {
       $scope.preloader = true;
     });
   };
