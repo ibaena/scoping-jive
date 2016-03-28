@@ -14,7 +14,7 @@
   </a>
 </div>
 
-<div class="wrapper" ng-hide="preloader" >
+<div class="wrapper" ng-hide="preloader" ng-class="{'animated fadeIn': !preloader}">
   <div ui-view="preloader"></div>
 </div>
 <div class="wrapper" ng-show="aboutLoader" ng-class="{'animated fadeIn': aboutLoader , 'animated fadeOut': !aboutLoader}">

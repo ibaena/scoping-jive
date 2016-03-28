@@ -1,5 +1,9 @@
-<div class="landing" >
-  <a href="" ng-click="enter()" id="brands">
-    <h1 id="brand" class="animated infinite pulse">Welcome!</h1>
+
+<div class="landing container" >
+  <div class="wrapper" ng-hide="preloader" ng-class="{'animated fadeIn': !preloader}" >
+    <div ui-view="preloader"></div>
+  </div>
+  <a href="" ng-click="enter()" id="brands" ng-hide="!preloader">
+    <h1 id="brand" class="animated infinite pulse" ng-hide="showNav">Welcome!</h1>
   </a>
 </div>

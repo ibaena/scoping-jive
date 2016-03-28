@@ -1,17 +1,23 @@
 var mainCtrl = angular.module('mainCtrl', ['ngAnimate']);
 
 mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', function($scope, $http, $location, $timeout) {
+  $scope.preloader = true;
   $scope.enter = function() {
     $scope.showNav = true;
-    $location.path('/ivanbaena');
+    $scope.preloader = false;
+    $timeout(function() {
+      $scope.preloader = true;
+    }, 2000).then(function() {
+      $location.path('/ivanbaena');
+
+    });
   };
-  $scope.preloader = true;
   $scope.aboutLoader = false;
   $scope.showAbout = function() {
     $scope.preloader = false;
     $timeout(function() {
       $scope.aboutLoader = !$scope.aboutLoader;
-    }, 3000).then(function() {
+    }, 100).then(function() {
       $scope.preloader = true;
     });
   };

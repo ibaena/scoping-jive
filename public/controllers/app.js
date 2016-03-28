@@ -8,8 +8,17 @@ Portfolio.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('welcome', {
       url: '/',
-      templateUrl: '/views/partials/enter.html',
-      controller: 'mainCtrl'
+      views: {
+        '': {
+          templateUrl: '/views/partials/enter.html',
+          controller: 'mainCtrl'
+        },
+        'preloader@welcome': {
+          templateUrl: '/views/partials/preloader.html',
+          controller: 'mainCtrl'
+        }
+      },
+
     })
     .state('home', {
       url: '/ivanbaena',
