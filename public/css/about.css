@@ -7,9 +7,17 @@
   border-style: solid;
   border-width: thin;
   padding: 5px;
+  box-shadow: 5px;
+}
+.jumbotron{
+  background-color: transparent !important;
+  border-style: solid;
+  border-width: thin;
 }
 #headline {
   text-align: center;
+  font-size: 22px;
+  font-weight: lighter;
 }
 #socialNav {
 text-align: center;
@@ -31,4 +39,9 @@ text-align: center;
 }
 .menu{
   text-align: center;
+}
+
+#intro{
+  font-weight: 300;
+  font-size: 16px;
 }

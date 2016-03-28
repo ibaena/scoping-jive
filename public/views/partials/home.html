@@ -17,13 +17,13 @@
 <div class="wrapper" ng-hide="preloader" ng-class="{'animated fadeIn': !preloader}">
   <div ui-view="preloader"></div>
 </div>
-<div class="wrapper" ng-show="aboutLoader" ng-class="{'animated fadeIn': aboutLoader , 'animated fadeOut': !aboutLoader}">
+<div class="wrapper" ng-show="aboutLoader" ng-class="{'animated fadeIn': aboutLoader }">
   <div ui-view="about"></div>
 </div>
-<div class="wrapper" ng-show="skillsLoader" ng-class="{'animated fadeIn': skillsLoader , 'animated fadeOut': !skillsLoader}">
+<div class="wrapper" ng-show="skillsLoader" ng-class="{'animated fadeIn': skillsLoader}">
   <div ui-view="skills"></div>
 </div>
-<div class="wrapper" ng-show="contactLoader" ng-class="{'animated fadeIn': contactLoader, 'animated fadeOut': !contactLoader}">
+<div class="wrapper" ng-show="contactLoader" ng-class="{'animated fadeIn': contactLoader}">
   <div ui-view="contact"></div>
 </div>
 <div class="wrapper" ng-hide="aboutLoader || skillsLoader || !header || contactLoader || !preloader" ng-show="header" ng-class="{'animated fadeIn': header,'animated fadeOut': header && !preloader}">
