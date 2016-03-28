@@ -91,7 +91,9 @@ a:hover {
 /*Preloader*/
 
 #preloader{
-  padding-top: 160px;
+  margin-top: 220px;
+  text-align: center;
+  opacity: 0.1;
 }
 
 /*Contact css*/

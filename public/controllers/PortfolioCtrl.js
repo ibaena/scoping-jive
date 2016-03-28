@@ -7,7 +7,7 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
   };
   $scope.preloader = true;
   $scope.contactLoader = false;
-  $scope.addRmContact = function() {
+  $scope.showContact = function() {
     $scope.preloader = false;
     $timeout(function() {
       $scope.contactLoader = !$scope.contactLoader;
@@ -23,7 +23,7 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
     });
   };
   $scope.skillsLoader = false;
-  $scope.addRmSkills = function() {
+  $scope.showSkills = function() {
     $scope.preloader = false;
     $timeout(function() {
       $scope.skillsLoader = !$scope.skillsLoader;
