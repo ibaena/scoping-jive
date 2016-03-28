@@ -2,12 +2,12 @@
   display: block;
   margin: 0 auto;
   border-radius: 50%;
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   border-style: solid;
   border-width: thin;
   padding: 5px;
-  box-shadow: 5px;
+  box-shadow: 2px 2px 2px #888888;
 }
 .jumbotron{
   background-color: transparent !important;
