@@ -6,12 +6,14 @@
   height: 250px;
   width: auto;
   color: white;
+  border-radius: 2px;
 }
 #split2 {
   background-color: #444;
   height: 250px;
   width: auto;
   color: white;
+  border-radius: 2px;
 }
 #arrow-left {
   float: left;
@@ -27,4 +29,54 @@
   padding-top: 25px;
   display: block;
   margin: 0 auto;
+}
+.code-logos-II{
+  padding-top: 20px;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 100px;
+
+}
+.navicons{
+  color: black;
+  text-decoration: none;
+  opacity: .2;
+}
+.split3{
+  padding: 20px;
+}
+
+#js-logo{
+  background-color: #323330;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  border-style: groove;
+  border-width: thin;
+}
+#node-logo{
+  background-color: #404137;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  border-style: groove;
+  border-width: thin;
+}
+#jquery-logo{
+  background-color: #7281BF;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  border-style: groove;
+  border-width: thin;
+}
+#angular-logo{
+  background-color: #FEFEFE;
+  border-radius: 5px;
+  color: black;
+  padding: 10px;
+  border-style: groove;
+  border-width: thin;
+
 }
