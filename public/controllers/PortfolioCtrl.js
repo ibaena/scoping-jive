@@ -60,4 +60,8 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
       $scope.preloader = true;
     });
   };
+  $scope.split = false;
+  $scope.skillCodeChanger = function() {
+    $scope.split = !$scope.split;
+  };
 }]);

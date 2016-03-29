@@ -1,7 +1,7 @@
 <div class="container">
-  <div class="row" ng-init="split= false">
+  <div class="row">
     <div id="arrow-right">
-      <a href="" ng-click="split = !split">
+      <a href="" ng-click="skillCodeChanger()">
         <i class="fa fa-angle-right fa-5x"></i>
       </a>
     </div>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="col-md-10 col-md-offset-1">
-      <div id="split1" ng-class="{'animated slideOutUp': split, 'animated slideInDown': !split }">
+      <div id="split1" ng-class="{'magictime slideUp': split, 'animated slideInDown': !split }">
         <img src="/public/img/html5.png" / alt="html logo" class="code-logos">
         <h1 class="headline-skill">HTML
           <br/>
@@ -20,7 +20,7 @@
             Mobile first, responsive builds</small>
         </h1>
       </div>
-      <div id="split2" ng-class="{'animated slideOutDown': split, 'animated slideInUp': !split }">
+      <div id="split2" ng-class="{'magictime slideDown': split, 'animated slideInUp': !split }">
         <img src="/public/img/css3.png" / alt="html logo" class="code-logos">
         <h1 class="headline-skill">CSS
           <br/>
