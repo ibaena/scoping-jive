@@ -1,118 +1,30 @@
-.graph-bar {
-  animation-name: pullUp;
-  -webkit-animation-name: pullUp;
-  animation-duration: 1.1s;
-  -webkit-animation-duration: 1.1s;
-  animation-timing-function: ease-out;
-  -webkit-animation-timing-function: ease-out;
-  transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%;
-  -webkit-transform-origin: 50% 100%;
+.small{
+  color: white !important;
 }
-@keyframes pullUp {
-  0% {
-    transform: scaleY(0.1);
-  }
-  40% {
-    transform: scaleY(1.02);
-  }
-  60% {
-    transform: scaleY(0.98);
-  }
-  80% {
-    transform: scaleY(1.01);
-  }
-  100% {
-    transform: scaleY(0.98);
-  }
-  80% {
-    transform: scaleY(1.01);
-  }
-  100% {
-    transform: scaleY(1);
-  }
+#split1 {
+  background-color: black;
+  height: 250px;
+  width: auto;
+  color: white;
 }
-@-webkit-keyframes pullUp {
-  0% {
-    -webkit-transform: scaleY(0.1);
-  }
-  40% {
-    -webkit-transform: scaleY(1.02);
-  }
-  60% {
-    -webkit-transform: scaleY(0.98);
-  }
-  80% {
-    -webkit-transform: scaleY(1.01);
-  }
-  100% {
-    -webkit-transform: scaleY(0.98);
-  }
-  80% {
-    -webkit-transform: scaleY(1.01);
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-  }
+#split2 {
+  background-color: #444;
+  height: 250px;
+  width: auto;
+  color: white;
 }
-#graph-container {
-  margin: 0 auto;
-  position: relative;
-  width:100%;
-  max-width: 50%;
-  border-bottom: 4px solid #CCCCCC;
-  border-left: 4px solid #CCCCCC;
-  padding-top: 100px;
-  margin-bottom: 40px;
+#arrow-left {
+  float: left;
+}
+#arrow-right {
+  float: right;
+}
 
+.headline-skill{
+  text-align: center;
 }
-#shiftright{
-  padding-left: 10px;
-}
-.graph-bar {
-  width: 90%;
-  background-color: #fe5652;
-  margin: 0px 1%;
-  border-radius: 2px;
-  display: table-cell;
-  margin-right: 10px;
-}
-.language {
-  display: inline-block;
-  padding-right: 10px;
-}
-.bar-1 {
-  height: 325px;
-  display: inline-block;
-  border-radius: 5px;
-}
-.bar-2 {
-  height: 250px;
-  display: inline-block;
-  border-radius: 5px;
-}
-.bar-3 {
-  height: 350px;
-  display: inline-block;
-  border-radius: 5px;
-}
-.bar-4 {
-  height: 375px;
-  display: inline-block;
-  border-radius: 5px;
-}
-.bar-5 {
-  height: 250px;
-  display: inline-block;
-  border-radius: 5px;
-}
-.bar-6 {
-  height: 275px;
-  display: inline-block;
-  border-radius: 5px;
-}
-.bar-7 {
-  height: 225px;
-  display: inline-block;
-  border-radius: 5px;
+.code-logos{
+  padding-top: 25px;
+  display: block;
+  margin: 0 auto;
 }

@@ -49,7 +49,7 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
     $scope.preloader = false;
     $timeout(function() {
       $scope.skillsLoader = !$scope.skillsLoader;
-    }, 2500).then(function() {
+    }, 500).then(function() {
       $scope.preloader = true;
     });
   };

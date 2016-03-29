@@ -1,6 +1,9 @@
     body {
     font-family: 'Playfair Display', serif;
   }
+  #footer{
+    padding-top: 10px;
+  }
   .landing {
     max-width: 100%;
     max-height: 100%;
