@@ -6,7 +6,7 @@
     "img": "/public/img/html5.png"
   },
   {
-    "name" : "CSS",
+    "name" : "CSS3",
     "value" : "78",
     "level": "Intermediate",
     "img": "/public/img/css3.png"
@@ -34,5 +34,17 @@
     "value" : "78",
     "level": "Intermediate",
     "img": "/public/img/jquery.png"
+  },
+  {
+    "name" : "MongoDb",
+    "value" : "78",
+    "level": "Intermediate",
+    "img": "/public/img/mongodb.png"
+  },
+  {
+    "name" : "MySQL",
+    "value" : "78",
+    "level": "Intermediate",
+    "img": "/public/img/mysql.png"
   }
 ]

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-2 col-xs-12">
+    <div class="col-md-2 col-xs-2">
       <form>
         <div class="form-group" >
           <button href="" id="html" class="btn btn-default" ng-click="showLanguage('html5')" class="navicons" data-toggle="tooltip" data-placement="top" title="HTML5">
@@ -28,6 +28,16 @@
           </button>
         </div>
         <div class="form-group">
+          <button href="" id="mongo" class="btn btn-default" ng-click="showLanguage('mongodb')" class="navicons" data-toggle="tooltip" data-placement="top" title="MongoDb">
+            <i class="fa fa-database fa-2x"></i>
+          </button>
+        </div>
+        <div class="form-group">
+          <button href="" id="mysql" class="btn btn-default" ng-click="showLanguage('mysql')" class="navicons" data-toggle="tooltip" data-placement="top" title="MySQL">
+            <i class="fa fa-table fa-2x"></i>
+          </button>
+        </div>
+        <div class="form-group">
           <button href="" id="bacbtn-skill" class="btn btn-default btn-block" ng-click="$parent.removeSkills()" $parent.removeSkills() class="navicons" data-toggle="tooltip" data-placement="top" title="Back">
             <i class="fa fa-angle-left fa-2x"></i>
           </button>
@@ -35,13 +45,10 @@
       </form>
     </div>
 
-    <div class="col-md-9" id="skills-wrap">
-      <div class="wrap" ng-hide="preloader" ng-class="{'animated fadeIn': !preloader}"2>
-      <div ui-view="preloader"></div>
-    </div>
+    <div class="col-md-9 col-xs-9" id="skills-wrap">
       <ul class="results list-group" ng-show="query">
         <li class="col-md-8 col-md-offset-2 list-group-item" ng-repeat="item in skills | filter: query ">
-          <div class="info"   ng-class="{'magictime spaceInUp': query }">
+          <div class="info"   ng-class="{'magictime vanishIn': query }">
             <img class="profilePic" ng-src="{{item.img}}" alt="profile"/>
             <h3 id="name">{{item.name}}<br/>
               <small>Rating:
