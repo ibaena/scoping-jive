@@ -1,6 +1,10 @@
 .small {
   color: white !important;
 }
+#title{
+  text-align: center;
+  margin-bottom: 10px;
+}
 .profilePic{
   height: 100px;
   width: auto;

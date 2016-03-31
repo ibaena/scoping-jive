@@ -1,5 +1,10 @@
 <div class="container">
   <div class="row">
+    <div class="col-md-12" id="title">
+      <h2>Langauges I Read & Write</h2>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-md-2 col-xs-2">
       <form>
         <div class="form-group">
@@ -58,7 +63,7 @@
               <br/>
               <small>{{item.level}}</small>
             </h4>
-            <div class="mouseoverInfo">
+            <div class="wrapper" ng-class="{'animated fadeIn': showInfo, 'magictime slideUp': !showInfo }">
               <h3 ng-show="showInfo">What can I do for you?
                 <br/>
                 <small>{{item.review}}</small>
