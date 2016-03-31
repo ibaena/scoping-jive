@@ -7,39 +7,9 @@
   <div class="row">
     <div class="col-md-2 col-xs-2">
       <form>
-        <div class="form-group">
-          <button href="" id="html" class="btn btn-default" ng-click="showLanguage('html5')" class="navicons" data-toggle="tooltip" data-placement="top" title="HTML5">
-            <i class="fa fa-cube fa-2x"></i>
-          </button>
-        </div>
-        <div class="form-group">
-          <button href="" id="css" class="btn btn-default" ng-click="showLanguage('css3')" class="navicons" data-toggle="tooltip" data-placement="top" title="CSS3">
-            <i class="fa fa-eye fa-2x"></i>
-          </button>
-        </div>
-        <div class="form-group">
-          <button href="" id="jscript" class="btn btn-default" ng-click="showLanguage('javascript')" class="navicons" data-toggle="tooltip" data-placement="top" title="Javascript">
-            <i class="fa fa-cogs fa-2x"></i>
-          </button>
-        </div>
-        <div class="form-group">
-          <button href="" id="nodeJs" class="btn btn-default" ng-click="showLanguage('nodejs')" class="navicons" data-toggle="tooltip" data-placement="top" title="NodeJS">
-            <i class="fa fa-sitemap fa-2x"></i>
-          </button>
-        </div>
-        <div class="form-group">
-          <button href="" id="angularsJs" class="btn btn-default" ng-click="showLanguage('angularjs')" class="navicons" data-toggle="tooltip" data-placement="top" title="AngularJS">
-            <i class="fa fa-desktop fa-2x"></i>
-          </button>
-        </div>
-        <div class="form-group">
-          <button href="" id="mongo" class="btn btn-default" ng-click="showLanguage('mongodb')" class="navicons" data-toggle="tooltip" data-placement="top" title="MongoDb">
-            <i class="fa fa-database fa-2x"></i>
-          </button>
-        </div>
-        <div class="form-group">
-          <button href="" id="mysql" class="btn btn-default" ng-click="showLanguage('mysql')" class="navicons" data-toggle="tooltip" data-placement="top" title="MySQL">
-            <i class="fa fa-table fa-2x"></i>
+        <div class="form-group" ng-repeat="item in skills">
+          <button href="" class="btn btn-default" ng-click="showLanguage(item.name)" class="navicons" data-toggle="tooltip" data-placement="top" title="{{item.name}}">
+            <i class="{{item.fa_icon}}"></i>
           </button>
         </div>
         <div class="form-group">

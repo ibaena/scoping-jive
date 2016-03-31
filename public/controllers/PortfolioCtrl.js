@@ -69,9 +69,15 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
 mainCtrl.controller('skillsCtrl', ['$scope', '$http', '$location', '$timeout', function($scope, $http, $location, $timeout) {
   $http.get('public/js/skills.json').then(function(data) {
     $scope.skills = data.data;
-    console.log(data.data);
   });
   $scope.showLanguage = function(name) {
     $scope.query = name;
   };
+}]);
+mainCtrl.controller('aboutCtrl', ['$scope', '$http', '$location', '$timeout', function($scope, $http, $location, $timeout) {
+  $http.get('public/js/about.json').then(function(data) {
+    $scope.about = data.data;
+    console.log($scope.about.first_name);
+  });
+
 }]);
