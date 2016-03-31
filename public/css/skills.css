@@ -48,3 +48,10 @@
 .split3 {
   padding: 20px;
 }
+.info{
+  margin-top: 30px;
+  text-align: center;
+}
+#backbtn-skill{
+  display: block;
+}

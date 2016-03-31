@@ -2,39 +2,56 @@
   <div class="row">
     <div class="col-md-2 col-xs-12">
       <form>
-        <div class="form-group">
-          <div class="form-group">
-            <label for="search">Search</label>
-            <input type="text" ng-model="query" class="form-control" id="search" placeholder="Search">
-          </div>
-        </div>
-        <div class="form-group">
-          <button href="" class="btn btn-default" id="arrow-left" ng-click="$parent.removeSkills()" class="navicons">
-            <i class="fa fa-angle-left fa-3x"></i>
+        <div class="form-group" >
+          <button href="" id="html" class="btn btn-default" ng-click="showLanguage('html5')" class="navicons" data-toggle="tooltip" data-placement="top" title="HTML5">
+            <i class="fa fa-cube fa-2x"></i>
           </button>
         </div>
         <div class="form-group">
-          <button href="" id="arrow-right" class="btn btn-default" ng-click="skillCodeChanger()" class="navicons">
-            <i class="fa fa-cube  fa-3x"></i>
+          <button href="" id="css" class="btn btn-default" ng-click="showLanguage('css3')" class="navicons" data-toggle="tooltip" data-placement="top" title="CSS3">
+            <i class="fa fa-eye fa-2x"></i>
+          </button>
+        </div>
+        <div class="form-group">
+          <button href="" id="jscript" class="btn btn-default" ng-click="showLanguage('javascript')" class="navicons" data-toggle="tooltip" data-placement="top" title="Javascript">
+            <i class="fa fa-cogs fa-2x"></i>
+          </button>
+        </div>
+        <div class="form-group">
+          <button href="" id="nodeJs" class="btn btn-default" ng-click="showLanguage('nodejs')" class="navicons" data-toggle="tooltip" data-placement="top" title="NodeJS">
+            <i class="fa fa-sitemap fa-2x"></i>
+          </button>
+        </div>
+        <div class="form-group">
+          <button href="" id="angularsJs" class="btn btn-default" ng-click="showLanguage('angularjs')" class="navicons" data-toggle="tooltip" data-placement="top" title="AngularJS">
+            <i class="fa fa-desktop fa-2x"></i>
+          </button>
+        </div>
+        <div class="form-group">
+          <button href="" id="bacbtn-skill" class="btn btn-default btn-block" ng-click="$parent.removeSkills()" $parent.removeSkills() class="navicons" data-toggle="tooltip" data-placement="top" title="Back">
+            <i class="fa fa-angle-left fa-2x"></i>
           </button>
         </div>
       </form>
     </div>
 
     <div class="col-md-9" id="skills-wrap">
-      <ul class="results" ng-show="query">
-        <li class="col-md-4 doctors" ng-repeat="item in skills | filter: query ">
-          <div class="info">
+      <div class="wrap" ng-hide="preloader" ng-class="{'animated fadeIn': !preloader}"2>
+      <div ui-view="preloader"></div>
+    </div>
+      <ul class="results list-group" ng-show="query">
+        <li class="col-md-8 col-md-offset-2 list-group-item" ng-repeat="item in skills | filter: query ">
+          <div class="info"   ng-class="{'magictime spaceInUp': query }">
             <img class="profilePic" ng-src="{{item.img}}" alt="profile"/>
             <h3 id="name">{{item.name}}<br/>
-              <small>Rating: {{item.value}}</small>
+              <small>Rating:
+                {{item.value}}</small>
             </h3>
             <h4>Level
               <br/>
               <small>{{item.level}}</small>
             </h4>
           </div>
-          <hr/>
         </li>
       </ul>
     </div>

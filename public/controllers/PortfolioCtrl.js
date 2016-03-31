@@ -71,4 +71,7 @@ mainCtrl.controller('skillsCtrl', ['$scope', '$http', '$location', '$timeout', f
     $scope.skills = data.data;
     console.log(data.data);
   });
+  $scope.showLanguage = function(name) {
+    $scope.query = name;
+  };
 }]);
