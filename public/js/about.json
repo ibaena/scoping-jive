@@ -13,5 +13,11 @@
     "twitter": "https://twitter.com/NotThefakeIB",
     "linkedin": "https://www.linkedin.com/in/ivanbaena",
     "github": "https://github.com/ibaena"
+  },
+  "social_icons":{
+    "facebook": "fa fa-facebook fa-2x",
+    "twitter": "fa fa-twitter fa-2x",
+    "linkedin": "fa fa-linkedin fa-2x ",
+    "github": "fa fa-github fa-2x"
   }
 }
