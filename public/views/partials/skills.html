@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-2 col-xs-2">
       <form>
-        <div class="form-group" >
+        <div class="form-group">
           <button href="" id="html" class="btn btn-default" ng-click="showLanguage('html5')" class="navicons" data-toggle="tooltip" data-placement="top" title="HTML5">
             <i class="fa fa-cube fa-2x"></i>
           </button>
@@ -47,8 +47,8 @@
 
     <div class="col-md-9 col-xs-9" id="skills-wrap">
       <ul class="results list-group" ng-show="query">
-        <li class="col-md-8 col-md-offset-2 list-group-item" ng-repeat="item in skills | filter: query ">
-          <div class="info"   ng-class="{'magictime vanishIn': query }">
+        <li class="col-md-8 col-md-offset-2 list-group-item" ng-repeat="item in skills | filter: { name: query } ">
+          <div class="info" ng-class="{'magictime vanishIn': query }" ng-mouseover="showInfo = true" ng-mouseleave="showInfo = false">
             <img class="profilePic" ng-src="{{item.img}}" alt="profile"/>
             <h3 id="name">{{item.name}}<br/>
               <small>Rating:
@@ -58,6 +58,13 @@
               <br/>
               <small>{{item.level}}</small>
             </h4>
+            <div class="mouseoverInfo">
+              <h3 ng-show="showInfo">What can I do for you?
+                <br/>
+                <small>{{item.review}}</small>
+              </h3>
+
+            </div>
           </div>
         </li>
       </ul>

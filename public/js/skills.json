@@ -1,50 +1,50 @@
-[
-  {
-    "name" : "HTML5",
-    "value" : "88",
-    "level": "Advanced",
-    "img": "/public/img/html5.png"
-  },
-  {
-    "name" : "CSS3",
-    "value" : "78",
-    "level": "Intermediate",
-    "img": "/public/img/css3.png"
-  },
-  {
-    "name" : "Javascript",
-    "value" : "80",
-    "level": "Intermediate",
-    "img": "/public/img/js.png"
-  },
-  {
-    "name" : "NodeJS",
-    "value" : "86",
-    "level": "Intermediate",
-    "img": "/public/img/node.png"
-  },
-  {
-    "name" : "AngularJS",
-    "value" : "83",
-    "level": "Intermediate",
-    "img": "/public/img/angular.png"
-  },
-  {
-    "name" : "Jquery",
-    "value" : "78",
-    "level": "Intermediate",
-    "img": "/public/img/jquery.png"
-  },
-  {
-    "name" : "MongoDb",
-    "value" : "78",
-    "level": "Intermediate",
-    "img": "/public/img/mongodb.png"
-  },
-  {
-    "name" : "MySQL",
-    "value" : "78",
-    "level": "Intermediate",
-    "img": "/public/img/mysql.png"
-  }
-]
+[{
+  "name": "HTML5",
+  "value": "88",
+  "level": "Advanced",
+  "img": "/public/img/html5.png",
+  "review": "Responsive Web Design makes your web app look good on all devices (desktops, tablets, and phones)."
+}, {
+  "name": "CSS3",
+  "value": "78",
+  "level": "Intermediate",
+  "img": "/public/img/css3.png",
+  "review": "CSS describes how HTML elements are to be displayed on screen, and how I will make your designs and styles unique!"
+}, {
+  "name": "Javascript",
+  "value": "80",
+  "level": "Intermediate",
+  "img": "/public/img/js.png",
+  "review": "Javascript will add the user interactivity to your website that you desire!"
+
+}, {
+  "name": "NodeJS",
+  "value": "86",
+  "level": "Intermediate",
+  "img": "/public/img/node.png",
+  "review": "Server that is very fast to fit your all websites or web apps needs."
+}, {
+  "name": "AngularJS",
+  "value": "83",
+  "level": "Intermediate",
+  "img": "/public/img/angular.png",
+  "review": "Front end javascript framework that is well developed (Google), and comprehensive, fit for any sized project your looking to build."
+}, {
+  "name": "Jquery",
+  "value": "78",
+  "level": "Intermediate",
+  "img": "/public/img/jquery.png",
+  "review": "Javascript libarary that provides ease of use, a large library, and a strong opensource community"
+}, {
+  "name": "MongoDb",
+  "value": "78",
+  "level": "Intermediate",
+  "img": "/public/img/mongodb.png",
+  "review": "NoSQL database development experience (MEAN)."
+}, {
+  "name": "MySQL",
+  "value": "78",
+  "level": "Intermediate",
+  "img": "/public/img/mysql.png",
+  "review": "MySQL database development experience"
+}]
