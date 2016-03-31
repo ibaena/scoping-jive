@@ -49,10 +49,11 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
     $scope.preloader = false;
     $timeout(function() {
       $scope.skillsLoader = !$scope.skillsLoader;
-    }, 500).then(function() {
+    }, 2500).then(function() {
       $scope.preloader = true;
     });
   };
+  $scope.split = false;
   $scope.removeSkills = function() {
     $scope.skillsLoader = !$scope.skillsLoader;
     $scope.preloader = false;
@@ -60,8 +61,14 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
       $scope.preloader = true;
     });
   };
-  $scope.split = false;
   $scope.skillCodeChanger = function() {
     $scope.split = !$scope.split;
   };
+}]);
+
+mainCtrl.controller('skillsCtrl', ['$scope', '$http', '$location', '$timeout', function($scope, $http, $location, $timeout) {
+  $http.get('public/js/skills.json').then(function(data) {
+    $scope.skills = data.data;
+    console.log(data.data);
+  });
 }]);

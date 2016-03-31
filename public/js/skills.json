@@ -1,0 +1,38 @@
+[
+  {
+    "name" : "HTML5",
+    "value" : "88",
+    "level": "Advanced",
+    "img": "/public/img/html5.png"
+  },
+  {
+    "name" : "CSS",
+    "value" : "78",
+    "level": "Intermediate",
+    "img": "/public/img/css3.png"
+  },
+  {
+    "name" : "Javascript",
+    "value" : "80",
+    "level": "Intermediate",
+    "img": "/public/img/js.png"
+  },
+  {
+    "name" : "NodeJS",
+    "value" : "86",
+    "level": "Intermediate",
+    "img": "/public/img/node.png"
+  },
+  {
+    "name" : "AngularJS",
+    "value" : "83",
+    "level": "Intermediate",
+    "img": "/public/img/angular.png"
+  },
+  {
+    "name" : "Jquery",
+    "value" : "78",
+    "level": "Intermediate",
+    "img": "/public/img/jquery.png"
+  }
+]

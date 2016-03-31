@@ -1,53 +1,41 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-2">
-      <a href="" id="arrow-left" ng-click="$parent.removeSkills()" class="navicons">
-        <i class="fa fa-angle-left fa-3x"></i>
-      </a>
-      <a href="" id="arrow-right" ng-click="skillCodeChanger()" class="navicons">
-        <i class="fa fa-cube  fa-3x"></i>
-      </a>
+    <div class="col-md-2 col-xs-12">
+      <form>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="search">Search</label>
+            <input type="text" ng-model="query" class="form-control" id="search" placeholder="Search">
+          </div>
+        </div>
+        <div class="form-group">
+          <button href="" class="btn btn-default" id="arrow-left" ng-click="$parent.removeSkills()" class="navicons">
+            <i class="fa fa-angle-left fa-3x"></i>
+          </button>
+        </div>
+        <div class="form-group">
+          <button href="" id="arrow-right" class="btn btn-default" ng-click="skillCodeChanger()" class="navicons">
+            <i class="fa fa-cube  fa-3x"></i>
+          </button>
+        </div>
+      </form>
     </div>
 
     <div class="col-md-9" id="skills-wrap">
-
-      <div id="split1" ng-class="{'magictime slideUp': split, 'animated slideInDown': !split }">
-        <img src="/public/img/html5.png" / alt="html logo" class="code-logos">
-        <h1 class="headline-skill">HTML
-          <br/>
-          <small class="small">
-            Mobile first, responsive builds</small>
-        </h1>
-      </div>
-
-      <div id="wrapper-js" class="row">
-        <div class="col-md-3 split3" id="js-logo" ng-show="split" ng-class="{'magictime foolishIn': split, 'magictime foolishOut': !split }">
-          <img src="/public/img/js.png" / alt="javascript logo" class="code-logos-II">
-          <h1 class="headline-skill">JavaScript</h1>
-        </div>
-        <div class="col-md-3 split3" id="jquery-logo" ng-show="split" ng-class="{'magictime foolishIn': split, 'magictime foolishOut': !split }">
-          <img src="/public/img/jquery.png" / alt="jquery logo" class="code-logos-II">
-          <h1 class="headline-skill">Jquery</h1>
-        </div>
-        <div class="col-md-3 split3" id="node-logo" ng-show="split" ng-class="{'magictime foolishIn': split, 'magictime foolishOut': !split }">
-          <img src="/public/img/node.png" / alt="node logo" class="code-logos-II">
-          <h1 class="headline-skill">NodeJS</h1>
-        </div>
-        <div class="col-md-3 split3" id="angular-logo" ng-show="split" ng-class="{'magictime foolishIn': split, 'magictime foolishOut': !split }">
-          <img src="/public/img/angular.png" / alt="angular logo" class="code-logos-II">
-          <h1 class="headline-skill">Angular</h1>
-        </div>
-      </div>
-
-      <div id="split2" ng-class="{'magictime slideDown': split, 'animated slideInUp': !split }">
-        <img src="/public/img/css3.png" / alt="html logo" class="code-logos">
-        <h1 class="headline-skill">CSS
-          <br/>
-          <small class="small">
-            Eye appealing, unique designs!</small>
-        </h1>
-      </div>
+      <ul class="results" ng-show="query">
+        <li class="col-md-4 doctors" ng-repeat="item in skills | filter: query ">
+          <div class="info">
+            <img class="profilePic" ng-src="{{item.img}}" alt="profile"/>
+            <h3 id="name">{{item.name}}<br/>
+              <small>Rating: {{item.value}}</small>
+            </h3>
+            <h4>Level
+              <br/>
+              <small>{{item.level}}</small>
+            </h4>
+          </div>
+          <hr/>
+        </li>
+      </ul>
     </div>
   </div>
-
-</div>

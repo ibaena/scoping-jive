@@ -14,6 +14,7 @@ app.use(express.static(__dirname + "/public/views"));
 app.use(express.static(__dirname + "/public/controllers"));
 app.use(express.static(__dirname + "/public/views/partials"));
 app.use('/bower_components', express.static(__dirname + "/bower_components"));
+app.use(express.static(__dirname + "/bower_components"));
 
 //frontend routes =========================================================
 app.get('*', function(req, res) {
