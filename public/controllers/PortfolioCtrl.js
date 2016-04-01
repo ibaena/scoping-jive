@@ -79,5 +79,4 @@ mainCtrl.controller('aboutCtrl', ['$scope', '$http', '$location', '$timeout', fu
     $scope.about = data.data;
     console.log($scope.about.first_name);
   });
-
 }]);

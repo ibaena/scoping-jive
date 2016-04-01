@@ -6,8 +6,11 @@
   height: 140px;
   border-style: solid;
   border-width: thin;
-  margin-top: 270px;
+  border-color: white;
+  margin-top: 280px;
   box-shadow: 2px 2px 2px #888888;
+  padding: 3px;
+  background-color: white;
 }
 .jumbotron{
 background-image: url('/public/img/space.jpg');
@@ -17,6 +20,7 @@ height: 400px;
 width: auto;
 }
 #headline {
+  margin-top: 10px;
   text-align: center;
   font-size: 22px;
   font-weight: lighter;
