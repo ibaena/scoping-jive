@@ -55,7 +55,7 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
       $scope.preloader = true;
     });
   };
-  $scope.removeproject = function() {
+  $scope.removeProject = function() {
     $scope.projectLoader = !$scope.projectLoader;
     $scope.preloader = false;
     $timeout(function() {}, 2500).then(function() {
