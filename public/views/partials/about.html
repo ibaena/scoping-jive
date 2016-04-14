@@ -2,11 +2,11 @@
   <img src="{{about.image}}" alt="ivan baena" class="profileImg">
 </div>
 <div class="container">
-  <a href="" ng-click="$parent.removeAbout()">
+  <a href="" ng-click="$parent.removeAbout()" class="btn btn-default">
     <i class="fa fa-arrow-left fa-2x"></i>
   </a>
   <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
       <div class="menu">
         <a ng-repeat="item in about.social_url" href="{{item.social_url}}" target="_blank">
           <i class="{{item.social_icons}}"></i>

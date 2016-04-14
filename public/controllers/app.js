@@ -1,6 +1,8 @@
 var Portfolio = angular.module('Portfolio', [
   'ui.router',
+  'sectionCtrl',
   'mainCtrl'
+
 ]);
 
 Portfolio.config(function($stateProvider, $urlRouterProvider) {
@@ -18,7 +20,6 @@ Portfolio.config(function($stateProvider, $urlRouterProvider) {
           controller: 'mainCtrl'
         }
       },
-
     })
     .state('home', {
       url: '/ivanbaena',
@@ -46,6 +47,10 @@ Portfolio.config(function($stateProvider, $urlRouterProvider) {
         'contact@home': {
           templateUrl: '/views/partials/contact.html',
           controller: 'mainCtrl'
+        },
+        'project@home': {
+          templateUrl: '/views/partials/projects.html',
+          controller: 'projectCtrl'
         },
         'footer@home': {
           templateUrl: '/views/partials/footer.html',

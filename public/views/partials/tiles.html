@@ -1,63 +1,79 @@
 <div id="tiles" class="container-fluid">
-  <div class="col-md-4 group about" ng-mouseover="about = true" ng-mouseleave="about = false">
-    <a href="" ng-click="$parent.showAbout()">
-      <p class="navtags">
-        <i class="fa fa-male fa-5x"></i>
-      </p>
-      <p ng-show="about" class="animated slideInUp reg-popup">
-        About Me
-      </p>
-    </a>
-  </div>
-  <div class="col-md-4 group skills" ng-mouseover="skills = true" ng-mouseleave="skills = false">
-    <a href="" ng-click="$parent.showSkills()">
-      <p class="navtags">
-        <i class="fa fa-laptop fa-5x"></i>
-      </p>
-      <p ng-show="skills" class="animated slideInUp reg-popup">
-        Languages
-      </p>
-    </a>
-  </div>
-  <div class="col-md-4 group contact" ng-mouseover="contact = true" ng-mouseleave="contact = false">
-    <a href="" ng-click="$parent.showContact()">
-      <p class="navtags inverse">
-        <i class="fa fa-commenting-o fa-5x"></i>
-      </p>
-      <p ng-show="contact" class="animated slideInUp popup">
-        Contact
-      </p>
-    </a>
-  </div>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+      <div class="col-md-4 col-xs-4 group about" ng-mouseover="about = true" ng-mouseleave="about = false">
+        <a href="" ng-click="$parent.showAbout()">
+          <p class="navtags">
+            <i class="fa fa-male fa-5x"></i>
+          </p>
+          <p ng-show="about" class="animated slideInUp reg-popup">
+            About Me
+          </p>
+        </a>
+      </div>
+      <div class="col-md-4 col-xs-4 group skills" ng-mouseover="skills = true" ng-mouseleave="skills = false">
+        <a href="" ng-click="$parent.showSkills()">
+          <p class="navtags">
+            <i class="fa fa-laptop fa-5x"></i>
+          </p>
+          <p ng-show="skills" class="animated slideInUp reg-popup">
+            Languages
+          </p>
+        </a>
+      </div>
+      <div class="col-md-4 col-xs-4 group contact" ng-mouseover="contact = true" ng-mouseleave="contact = false">
+        <a href="" ng-click="$parent.showProject()">
+          <p class="navtags inverse">
+            <i class="fa fa-briefcase fa-5x"></i>
+          </p>
+          <p ng-show="contact" class="animated slideInUp popup">
+            Projects
+          </p>
+        </a>
+      </div>
 
-  <div class="col-md-4 group skills" ng-mouseover="github = true" ng-mouseleave="github = false">
-    <a href="https://github.com/ibaena" target="_blank">
-      <p class="navtags">
-        <i class="fa fa-github fa-5x"></i>
-      </p>
-      <p ng-show="github" class="animated slideInUp reg-popup">
-        Github
-      </p>
-    </a>
-  </div>
-  <div class="col-md-4 group contact" ng-mouseover="linkedin = true" ng-mouseleave="linkedin = false">
-    <a href="https://www.linkedin.com/in/ivanbaena" target="_blank">
-      <p class="navtags inverse">
-        <i class="fa fa-linkedin-square fa-5x"></i>
-      </p>
-      <p ng-show="linkedin" class="animated slideInUp popup">
-        LinkedIn
-      </p>
-    </a>
-  </div>
-  <div class="col-md-4 group about" ng-mouseover="twitter = true" ng-mouseleave="twitter = false">
-    <a href="https://twitter.com/NotThefakeIB" target="_blank">
-      <p class="navtags">
-        <i class="fa fa-twitter-square fa-5x"></i>
-      </p>
-      <p ng-show="twitter" class="animated slideInUp reg-popup">
-        Twitter
-      </p>
-    </a>
+      <div class="col-md-4 col-xs-4 group skills" ng-mouseover="github = true" ng-mouseleave="github = false">
+        <a href="https://github.com/ibaena" target="_blank">
+          <p class="navtags">
+            <i class="fa fa-github fa-5x"></i>
+          </p>
+          <p ng-show="github" class="animated slideInUp reg-popup">
+            Github
+          </p>
+        </a>
+      </div>
+      <div class="col-md-4 col-xs-4 group contact" ng-mouseover="linkedin = true" ng-mouseleave="linkedin = false">
+        <a href="https://www.linkedin.com/in/ivanbaena" target="_blank">
+          <p class="navtags inverse">
+            <i class="fa fa-linkedin-square fa-5x"></i>
+          </p>
+          <p ng-show="linkedin" class="animated slideInUp popup">
+            LinkedIn
+          </p>
+        </a>
+      </div>
+      <div class="col-md-4 col-xs-4 group about" ng-mouseover="twitter = true" ng-mouseleave="twitter = false">
+        <a href="https://twitter.com/NotThefakeIB" target="_blank">
+          <p class="navtags">
+            <i class="fa fa-twitter-square fa-5x"></i>
+          </p>
+          <p ng-show="twitter" class="animated slideInUp reg-popup">
+            Twitter
+          </p>
+        </a>
+      </div>
+
+      <div class="col-md-12 col-xs-12 group contact" ng-mouseover="contact = true" ng-mouseleave="contact = false">
+        <a href="" ng-click="$parent.showContact()">
+          <p class="navtags inverse">
+            <i class="fa fa-commenting-o fa-5x"></i>
+          </p>
+          <p ng-show="contact" class="animated slideInUp popup">
+            Contact
+          </p>
+        </a>
+      </div>
+
+    </div>
   </div>
 </div>

@@ -12,12 +12,12 @@
   padding: 3px;
   background-color: white;
 }
-.jumbotron{
-background-image: url('/public/img/space.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-height: 400px;
-width: auto;
+.jumbotron {
+  background-image: url('/public/img/space.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: auto;
 }
 #headline {
   margin-top: 10px;
@@ -26,7 +26,7 @@ width: auto;
   font-weight: lighter;
 }
 #socialNav {
-text-align: center;
+  text-align: center;
   margin: 0 auto;
 }
 #socialNav li {
@@ -42,13 +42,22 @@ text-align: center;
   border-width: thin;
   padding: 5px;
   margin: 10px;
-
 }
-.menu{
+.menu {
   text-align: center;
 }
-
-#intro{
+#intro {
   font-weight: 300;
   font-size: 16px;
+}
+
+/*PROJECTS!!!*/
+
+a.list-group-item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.projectImg{
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
 }

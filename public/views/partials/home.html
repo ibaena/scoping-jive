@@ -24,7 +24,11 @@
   <div ui-view="contact"></div>
   <div ui-view="footer"></div>
 </div>
-<div class="wrapper" ng-hide="aboutLoader || skillsLoader || !header || contactLoader || !preloader" ng-show="header" ng-class="{'animated fadeIn': header,'animated fadeOut': header && !preloader}">
+<div class="wrapper" ng-show="projectLoader" ng-class="{'animated fadeIn': contactLoader}">
+  <div ui-view="project"></div>
+  <div ui-view="footer"></div>
+</div>
+<div class="wrapper" ng-hide="projectLoader || aboutLoader || skillsLoader || !header || contactLoader || !preloader" ng-show="header" ng-class="{'animated fadeIn': header,'animated fadeOut': header && !preloader}">
   <div ui-view="tiles"></div>
   <div ui-view="footer"></div>
 </div>

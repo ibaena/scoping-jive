@@ -1,0 +1,20 @@
+<div class="container">
+<div class="row">
+  <div class="col-md-3">
+    <a href="" ng-click="$parent.$parent.removeProject()">
+      <i class="fa fa-arrow-left fa-2x"></i>
+    </a>
+  </div>
+</div>
+  <div class="row">
+    <div ng-repeat="project in projects">
+      <div class="list-group col-md-6">
+        <a href="{{project.url}}" class="list-group-item">
+          <img src="http://placehold.it/350x150" class="projectImg">
+          <h4 class="list-group-item-heading">{{project.title}}</h4>
+          <p class="list-group-item-text">{{project.description}}</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

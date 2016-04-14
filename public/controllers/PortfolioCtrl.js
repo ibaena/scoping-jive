@@ -9,9 +9,9 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
       $scope.preloader = true;
     }, 2000).then(function() {
       $location.path('/ivanbaena');
-
     });
   };
+
   $scope.aboutLoader = false;
   $scope.showAbout = function() {
     $scope.preloader = false;
@@ -28,6 +28,7 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
       $scope.preloader = true;
     });
   };
+
   $scope.contactLoader = false;
   $scope.showContact = function() {
     $scope.preloader = false;
@@ -44,6 +45,24 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
       $scope.preloader = true;
     });
   };
+
+  $scope.projectLoader = false;
+  $scope.showProject = function() {
+    $scope.preloader = false;
+    $timeout(function() {
+      $scope.projectLoader = !$scope.projectLoader;
+    }, 2500).then(function() {
+      $scope.preloader = true;
+    });
+  };
+  $scope.removeproject = function() {
+    $scope.projectLoader = !$scope.projectLoader;
+    $scope.preloader = false;
+    $timeout(function() {}, 2500).then(function() {
+      $scope.preloader = true;
+    });
+  };
+
   $scope.skillsLoader = false;
   $scope.showSkills = function() {
     $scope.preloader = false;
@@ -64,19 +83,4 @@ mainCtrl.controller('mainCtrl', ['$scope', '$http', '$location', '$timeout', fun
   $scope.skillCodeChanger = function() {
     $scope.split = !$scope.split;
   };
-}]);
-
-mainCtrl.controller('skillsCtrl', ['$scope', '$http', '$location', '$timeout', function($scope, $http, $location, $timeout) {
-  $http.get('public/js/skills.json').then(function(data) {
-    $scope.skills = data.data;
-  });
-  $scope.showLanguage = function(name) {
-    $scope.query = name;
-  };
-}]);
-mainCtrl.controller('aboutCtrl', ['$scope', '$http', '$location', '$timeout', function($scope, $http, $location, $timeout) {
-  $http.get('public/js/about.json').then(function(data) {
-    $scope.about = data.data;
-    console.log($scope.about.first_name);
-  });
 }]);
